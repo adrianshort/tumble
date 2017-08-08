@@ -1,0 +1,144 @@
+body {
+  background-color: #777;
+  width: 600px;
+  margin: 50px auto;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.quote {
+  font-family: monospace;
+  border: 0px #777 solid;
+  /*background-color: #eee;*/
+  font-size: 1.8rem;
+  line-height: 2.0rem;
+  /*padding: 20px;*/
+  margin: 30px 0;
+}
+
+.quote-credit {
+  /*font-style: italic;*/
+  text-align: right;
+  font-size: 1.0rem;
+}
+
+.list-item {
+  display: block;
+  border: 0px #777 solid;
+  background-color: white;
+  padding: 10px 20px;
+  margin: 60px 0;
+  border-radius: 10px;
+}
+
+.list-item img {
+  margin: 0px 0 20px 0;
+  border-radius: 10px;
+}
+
+.list-quote {
+  background-color: #444;
+  color: white;
+}
+
+.list-video {
+  background-color: #000;
+  color: white;
+}
+
+
+
+.postmeta, .listmeta {
+  font-size: 100%;
+  color: #aaa;
+  font-family: monospace;
+  text-align: right;
+}
+
+.aside-list {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.7rem;
+  line-height: 3.5rem;
+}
+
+#aside-single {
+  margin: 10rem 0;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4.0rem;
+  line-height: 4.5rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+figure {
+  margin: 20px 0;
+  padding: 0;
+}
+
+figcaption {
+  text-transform: lowercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+article {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+h1 {
+  color: white;
+  text-transform: lowercase;
+}
+
+article h1 {
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+  margin: 50px 0;
+}
+
+#site-title {
+  margin: 70px 0;
+}
+
+#site-title a, #site-title a:visited {
+  font-size: 4.0rem;
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.tags li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 0 0 10px;
+  text-transform: lowercase;
+}
+
+.tags li a, .tags li a:hover, .tags li a:visited {
+  color: #777;
+  text-decoration: none;
+}
+
+ul.pagination li {
+  display: inline;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 599px) {
+    body {
+      width: 90%;
+      margin: 20px auto;
+    }
+    
+    img {
+      width: 100%;
+    }
+}

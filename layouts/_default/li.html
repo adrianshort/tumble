@@ -1,0 +1,8 @@
+<div class="list-item list-{{ .Type }}">
+  <!-- {{ partial ( print  .Type ".html" ) . }} -->
+  {{ partial .Type . }}
+  <div class="listmeta">
+    <!-- <a href="{{ .Permalink | relURL }}">#</a> -->
+    {{ partial "tags.html" . }}
+  </div>
+</div>

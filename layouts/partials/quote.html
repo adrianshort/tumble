@@ -1,0 +1,5 @@
+<div class="quote">
+  {{ .Content }}
+{{- with .Params -}}<p class="quote-credit">&mdash; {{ .author }}{{ with .work }}, {{ . }}{{ end }}{{ with .year }}, {{ . }}{{ end }}
+</p>{{- end -}}
+</div>

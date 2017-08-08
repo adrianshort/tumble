@@ -1,0 +1,8 @@
+<figure>
+  <a href="{{ .Permalink | relURL }}">
+    <img src="{{ relURL "/images/" }}{{ .Params.image_filename }}" alt="{{ .Params.title }}">
+  </a>
+  {{ if .Params.show_title  }}
+    {{ with .Params.title }}<figcaption>{{ . }}</figcaption>{{ end }}
+  {{ end }}
+</figure>

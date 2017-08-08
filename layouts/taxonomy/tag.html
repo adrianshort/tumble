@@ -1,0 +1,6 @@
+{{ partial "header" . }}
+<h1>{{ .Title | lower }}</h1>
+{{ range .Data.Pages }}
+{{ .Render "li" }}
+{{ end }}
+{{ partial "footer" . }}
