@@ -6,6 +6,8 @@
     {{ "<!-- Tumble theme for Hugo: https://github.com/adrianshort/tumble -->" | safeHTML }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ relURL "/css/main.css" }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
+      href="{{ .RSSLink }}">
   </head>
   <body>
     <h1 id="site-title"><a href="{{ relURL "/" }}">{{ .Site.Title }}</a></h1>
