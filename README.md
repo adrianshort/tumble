@@ -20,9 +20,9 @@ This theme relies heavily on its own archetypes to generate the different conten
 
 From the root of your Hugo site:
 
-    $ git clone https://github.com/adrianshort/tumble.git themes/
+    $ git clone https://github.com/adrianshort/tumble.git themes/tumble
     
-Enable the theme in your `/config.toml` file:
+Enable the theme in your `config.toml` file:
 
     theme = "tumble"
     
@@ -68,7 +68,7 @@ A quotation usually by someone else, with attribution to the `author` and option
 
 An embedded video from YouTube, Vimeo etc. This is currently quite clunky as you have to get the full embed URL from the video hosting site.
 
-So for [this video](https://www.youtube.com/watch?v=2-aWEYezEMk):
+So for [this video](https://www.youtube.com/watch?v=2-aWEYezEMk), do:
 
     $ hugo new videos/grimes-vanessa.md
     
