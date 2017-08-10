@@ -1,1 +1,7 @@
-<h2>Default list template</h2>
+{{ partial "header" . }}
+<h1>{{ .Title }}</h1>
+{{ range .Paginator.Pages }}
+{{ .Render "li" }}
+{{ end }}
+{{ template "_internal/pagination.html" . }}
+{{ partial "footer" . }}
