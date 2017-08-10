@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ .Site.Title }}</title>
+    <title>{{ partial "data/title" . }}</title>
     {{ .Hugo.Generator }}
     {{ "<!-- Tumble theme for Hugo: https://github.com/adrianshort/tumble -->" | safeHTML }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ relURL "/css/main.css" }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
+    <link rel="alternate" type="application/rss+xml" title="{{ partial "data/title" . }}"
       href="{{ .RSSLink }}">
   </head>
   <body>
     <h1 id="site-title"><a href="{{ relURL "/" }}">{{ .Site.Title }}</a></h1>
+    {{ with .RSSLink }}
+    <p><a href="{{ . }}" title="{{ partial "data/title" }}">RSS</a></p>
+    {{ end }}
+    <ul>
+    {{ range .Site.Sections }}
+      <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
