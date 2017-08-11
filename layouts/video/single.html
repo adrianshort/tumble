@@ -1,6 +1,6 @@
 {{ partial "header" . }}
 <style>body { background-color: black; color: white; }</style>
-{{ partial "video" . }}
+{{ partial "video-embed" .Params.embed_url }}
 {{ .Content }}
 {{ partial "postmeta" . }}
 {{ partial "footer" . }}
