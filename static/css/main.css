@@ -156,6 +156,23 @@ ul.pagination li.disabled {
   color: #333;
 }
 
+ul.tag-cloud {
+  margin: 30px 0;
+  padding: 0;
+}
+
+ul.tag-cloud li {
+  display: inline;
+  margin: 0;
+  padding: 10px 20px 10px 0;
+  line-height: 2rem;
+}
+
+ul.tag-cloud li a, ul.tag-cloud li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 599px) {
     body {
       width: 90%;
