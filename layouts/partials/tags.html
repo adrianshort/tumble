@@ -2,4 +2,5 @@
   {{ range .Params.tags }}
   <li><a href="{{ relURL "/tags/" }}{{ . | urlize }}/">{{ . }}</a></li>
   {{ end }}
+  <li><a href="{{ .Permalink }}" title="Permalink">#</a></li>
 </ul>
