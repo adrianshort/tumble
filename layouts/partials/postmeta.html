@@ -1,6 +1,4 @@
 <div class="postmeta">
-  <p>{{ .Date.Format "2 Jan 2006" }}
-  <a title="Permalink" href="{{ .Permalink | relURL }}">#</a>
-  </p>
+  <p>{{ .Date.Format "2 Jan 2006" }}</p>
   {{ partial "tags.html" . }}
 </div>
