@@ -1,0 +1,13 @@
+body {
+  background-color: white;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-transform: none;
+}
+
+h1#site-title a, h1#site-title a:visited, h1#site-title a:hover {
+  color: #777;
+}
