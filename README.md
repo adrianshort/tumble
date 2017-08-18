@@ -48,7 +48,7 @@ A single image with an optional caption (the `title`) and body text.
 
     # hugo new images/my-image-title.md
     
-Then copy the image file itself to `/static/images/` and update `image_filename` in the front matter if required.
+Then copy the image file itself to `/static/images/` and update `image` in the front matter if required.
 
 Set `show_title: true` to display the `title` as a caption beneath the image.
 
@@ -57,6 +57,8 @@ Set `show_title: true` to display the `title` as a caption beneath the image.
 A traditional blog post with mandatory title and body text.
 
     $ hugo new posts/my-post-title.md
+    
+Use the `image` field in the front matter to set the featured image for your post. This currently is only shown in the OpenGraph metadata, not on your site itself. If you want an image to show in the list views on your site, put it at the top of your post.
 
 ### Quotes
 
