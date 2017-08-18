@@ -1,0 +1,8 @@
+body {
+  background-color: #fff;
+  color: black;
+}
+
+h1#site-title a, h1#site-title a:visited, h1#site-title a:hover {
+  color: #eee;
+}
