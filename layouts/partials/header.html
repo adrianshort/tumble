@@ -6,8 +6,10 @@
     {{ "<!-- Tumble theme for Hugo: https://github.com/adrianshort/tumble -->" | safeHTML }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ relURL "/css/main.css" }}">
-    <script src="https://use.fontawesome.com/8ef49d4a0a.js"></script>
-
+    
+    <!-- https://www.bootstrapcdn.com/fontawesome/ -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
     {{- with .Type -}}
       <link rel="stylesheet" href="{{ relURL "/css/" }}{{ . }}.css">
     {{ end }}
