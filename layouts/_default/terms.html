@@ -1,6 +1,5 @@
 {{ define "main" }}
-  <h1>Default taxonomy terms template</h1>
-  <h1>{{ .Title }}</h1>
+  <h1><i class="fa fa-tags" aria-role="hidden"></i> {{ .Title }}</h1>
   <ul class="tag-cloud">
   {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
     <li><a href="{{ "/tags/" | relURL }}{{ $name | urlize }}/">{{ $name }}&nbsp;({{ $taxonomy.Count}})</a></li>
