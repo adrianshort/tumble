@@ -1,7 +1,8 @@
-{{ partial "header" . }}
-<h1>{{ .Title }}</h1>
-{{ range .Paginator.Pages }}
-{{ .Render "li" }}
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ range .Paginator.Pages }}
+    {{ .Render "li" }}
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
 {{ end }}
-{{ template "_internal/pagination.html" . }}
-{{ partial "footer" . }}
+

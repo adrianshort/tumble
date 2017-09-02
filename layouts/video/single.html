@@ -1,5 +1,5 @@
-{{ partial "header" . }}
-{{ partial "video-embed" .Params.embed_url }}
-{{ .Content }}
-{{ partial "postmeta" . }}
-{{ partial "footer" . }}
+{{ define "main" }}
+  {{ partial "video-embed" .Params.embed_url }}
+  {{ .Content }}
+  {{ partial "postmeta" . }}
+{{ end }}
