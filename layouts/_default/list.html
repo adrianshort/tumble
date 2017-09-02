@@ -1,5 +1,11 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  {{ $.Scratch.Set "fa_icon" "fa-tag" }}
+
+  {{ if isset .Params "fa_icon" }}
+    {{ $.Scratch.Set "fa_icon" .Params.fa_icon }}
+  {{ end }}
+
+  <h1><i class="fa {{ $.Scratch.Get "fa_icon" }}"></i>{{ .Title }}</h1>
   {{ range .Paginator.Pages }}
     {{ .Render "li" }}
   {{ end }}
