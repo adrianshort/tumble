@@ -27,12 +27,14 @@
     {{- template "_internal/twitter_cards.html" -}}
   </head>
   <body>
-    <h1 id="site-title"><a href="{{ relURL "/" }}">{{ .Site.Title }}</a></h1>
+    <header>
+      <h1 id="site-title"><a href="{{ relURL "/" }}">{{ .Site.Title }}</a></h1>
 
-    <div id="site-social">
-    {{ range .Site.Params.social}}
-      <a href="{{ .url }}" title="{{ .title }}">
-        <i class="fa {{ .fa_icon }}"></i>
-      </a>
-    {{ end }}
-    </div>
+      <div id="site-social">
+      {{ range .Site.Params.social}}
+        <a href="{{ .url }}" title="{{ .title }}">
+          <i class="fa {{ .fa_icon }}"></i>
+        </a>
+      {{ end }}
+      </div>
+    </header>
