@@ -8,6 +8,6 @@ h1, h2, h3 {
   text-transform: none;
 }
 
-h1#site-title a, h1#site-title a:visited, h1#site-title a:hover {
+h1#site-title a, h1#site-title a:visited, h1#site-title a:hover, .fa {
   color: #ccc;
 }
