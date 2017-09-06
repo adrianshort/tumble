@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/adrianshort/tumble/blob/master/LICENSE.md"
 description = "A minimal tumblelog. Content types: aside, image, post, quote, video."
 homepage = "http://example.com/"
-tags = ["tumblelog", "minimal", "clean", "fun", "personal", "Font Awesome"]
+tags = ["tumblelog", "minimal", "clean", "fun", "personal", "Font Awesome", "Google Analytics"]
 features = []
 min_version = "0.25.1"
 
